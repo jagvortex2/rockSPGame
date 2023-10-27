@@ -1,17 +1,32 @@
+//global properties
+const choices = ['Rock', 'Scissors', 'Paper'];
+let userChoice = '';
 
 
 function getComputerChoice(){
     let choice = '';
-    const choices = ['Rock', 'Scissors', 'Paper'];
     choice = choices[Math.floor(Math.random() * choices.length)];   
     //console.log(choice);
     return choice;
-    
+}
+
+function getUserChoice(){
+    const btns = document.querySelectorAll("button");
+    for(const btn of btns){
+        if(btn === "testr"){
+            return;
+        };
+    btn.addEventListener('click', ()=>{
+     let choice = btn.getAttribute("class"); 
+     console.log(choice + "");
+     return choice;
+    });
+}
 
 }
 
-function randomGame(){
-    let playerOne = getComputerChoice().toLowerCase();
+function  randomGame(){
+    let  playerOne = getComputerChoice().toLowerCase();
     let playerTwo = getComputerChoice().toLowerCase();
 
   try{
@@ -29,4 +44,7 @@ function randomGame(){
     console.log("Error of type " + e);
 }
 }
+
+
+getUserChoice();
 
