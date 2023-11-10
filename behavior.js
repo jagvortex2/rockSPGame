@@ -6,6 +6,7 @@ let winner = '';
 const MAXROUNDS = 5;
 
 
+
 //the 'computer' chooses an option randomly
 function getComputerChoice(){
     let choice = '';

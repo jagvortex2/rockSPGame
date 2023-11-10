@@ -2,51 +2,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
-*, body{
+ body{
     margin: 0;
+    background-color: #EAD7BB;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 
 h1{
-    margin: auto;
-    margin: 1rem;
-    padding: 0;
-    
+    margin:0;
+    padding: 1rem;
     font-family: 'Pixelify Sans', sans-serif;
     background-color: #EAD7BB;
     color: #3dc21b;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 3rem;
+    letter-spacing: 0.2em;
     
 }
 
+.outerTest>h1{
+    background-color: #191d18;
+    text-align: center;
+} 
+
+h2 {
+    margin: 0;
+
+    padding: 1rem;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #191d18;
+    color: #3dc21b;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+}
+
 footer{
-    margin: 0.5em;
-    padding: 0.5em;
+    display: flex;
+    background-color: #EAD7BB;
+    margin-top: 2%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+        align-items: center;
 }
 
 .container{
     padding: 0;
     margin: 0;
-    height:90vh;
+   height: 100%;
     background-color: #EAD7BB;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     gap: 1rem;
     box-sizing: border-box;
 }
 
 .outerTest{
-    
-    background-color: black;
-    height: 80%;
+    margin-top: 2%;
+    background-color: #191d18;
+    height: 74vh;
     width: 100%;
     display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         gap: 1rem;
         justify-content: center;
@@ -55,9 +79,9 @@ footer{
 
 .test{
     border-style: solid;
-    height: 20%;
-    width: 25rem;
-    padding: 2% 1rem 1rem;
+    height: 100px;
+    width: 20rem;
+    padding:0;
     margin: 1rem;
     text-align: center;
     background-color: rgb(32, 85, 67);
@@ -66,25 +90,57 @@ footer{
     
 }
 
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.results{
+    min-width: 30%;
+    min-height: 30%;
+    height: 20rem;
+    width: 35rem;
+    padding: 1.2rem;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: #191d18;
+    top: 0%;
+        margin-top: -25px;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+        font-weight: 800;
+        font-size: 2.5rem;
+    height: 15rem;
+    width: 20rem;
+    outline: dashed 1px #EAD7BB;
+}
+
 .btn{
     
         
         
         border: none;
-            display: inline-block;
             text-align: center;
             cursor: pointer;
             text-transform: uppercase;
             outline: none;
             overflow: hidden;
-            position: relative;
             background-color: rgb(32, 85, 67);
             color: #ffffff;
             font-weight: 600;
             font-size: 1.5rem;
             transition: all .2s ease-in-out;
             padding: 15px 50px;
-            margin: auto;
+            margin: 5%;
 
     }
 
@@ -104,7 +160,6 @@ footer{
         .btn:active {
             background-color: #008170;
             box-shadow: -2px 3px 0px -1px #191d18;
-           
             transform: translateY(4px);
         }
 
